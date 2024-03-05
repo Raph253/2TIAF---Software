@@ -11,7 +11,7 @@ for palavra in frase:
         verbo_inicio.append(frase.index(palavra))
 
     if palavra == ",":
-        final[predicados - 1] = frase.index(palavra)
+        final[predicados] = frase.index(palavra)
     
     if len(final) < len(verbo_inicio):
         final.append(len(frase))
